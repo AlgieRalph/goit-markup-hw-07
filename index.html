@@ -50,6 +50,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-burger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger" width="32" height="22">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -83,9 +92,8 @@
               </div>
               <h3 class="title">Strategy</h3>
               <p class="description">
-                Our goal is to identify the business <br />problem to walk away
-                with the <br />
-                perfect and creative solution.
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
             <li class="item">
@@ -98,8 +106,7 @@
               </div>
               <h3 class="title">Punctuality</h3>
               <p class="description">
-                Bring the key message to the <br />brand's audience for the best
-                price <br />
+                Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
@@ -113,8 +120,8 @@
               </div>
               <h3 class="title">Diligence</h3>
               <p class="description">
-                Research and confirm brands that <br />present the strongest
-                digital growth <br />opportunities and minimize risk.
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
               </p>
             </li>
             <li class="item">
@@ -127,8 +134,8 @@
               </div>
               <h3 class="title">Technologies</h3>
               <p class="description">
-                Design practice focused on digital <br />experiences. We bring
-                forth a deep <br />passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
               </p>
             </li>
           </ul>
@@ -180,9 +187,13 @@
           <ul class="team list">
             <li class="item">
               <img
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero@2x.jpg 2x
+                "
                 src="images/mark-guerrero.jpg"
                 alt="Mark Guerrero"
-                width="264"
+                width="270"
                 height="260"
                 class="image"
               />
@@ -245,9 +256,10 @@
             </li>
             <li class="item">
               <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
                 src="images/tom-ford.jpg"
                 alt="Tom Ford"
-                width="264"
+                width="270"
                 height="260"
                 class="image"
               />
@@ -310,9 +322,13 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia@2x.jpg 2x
+                "
                 src="images/camila-garcia.jpg"
                 alt="Camila Garcia"
-                width="264"
+                width="270"
                 height="260"
                 class="image"
               />
@@ -375,9 +391,13 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson@2x.jpg 2x
+                "
                 src="images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
-                width="264"
+                width="270"
                 height="260"
                 class="image"
               />
@@ -670,6 +690,97 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile Menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="mobile-close js-close-menu">
+        <svg class="mobile-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu list">
+        <li class="item">
+          <a class="mob-page current link" href="./index.html">Studio</a>
+        </li>
+        <li class="item">
+          <a class="mob-page link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="item">
+          <a class="mob-page link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <div>
+        <ul>
+          <li class="item">
+            <a class="contact link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a class="contact link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li class="icon-item">
+          <a
+            class="link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Instagram"
+          >
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-item">
+          <a
+            class="link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Twitter"
+          >
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-item">
+          <a
+            class="link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Facebook"
+          >
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-item">
+          <a
+            class="link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to LinkedIn"
+          >
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
