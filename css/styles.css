@@ -462,7 +462,7 @@ body {
   }
 }
 
-.menu-burger {
+.menu-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -586,6 +586,7 @@ body {
     flex-wrap: nowrap;
     margin-left: 0;
     margin-top: 72px;
+    gap: 50px;
   }
 }
 
