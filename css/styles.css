@@ -1291,7 +1291,7 @@ body {
 .menu-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -1342,7 +1342,7 @@ body {
 .mob-menu {
   margin-top: 80px;
   margin-left: 40px;
-  margin-bottom: 230px;
+  /* margin-bottom: 230px; */
 }
 
 .mob-page {
